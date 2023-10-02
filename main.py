@@ -10,7 +10,7 @@ def get_connection():
     return mysql.connector.connect(host=HOST, database=DATABASE, user=USER, password=PASSWORD)
 
 # CREATE
-def create_table():
+def CREATE():
     with get_connection() as conn:
         cursor = conn.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255))''')
@@ -23,27 +23,22 @@ def add_user(name):
         conn.commit()
 
 # READ
-def get_all_users():
+def READ():
     with get_connection() as conn:
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM users")
         return cursor.fetchall()
 
 # UPDATE
-def update_user_name(user_id, new_name):
+def UPDATE(user_id, new_name):
     with get_connection() as conn:
         cursor = conn.cursor()
         cursor.execute("UPDATE users SET name=%s WHERE id=%s", (new_name, user_id))
         conn.commit()
       
 # DELETE
-def delete_user(user_id):
+def DELETE(user_id):
     with get_connection() as conn:
         cursor = conn.cursor()
         cursor.execute("DELETE FROM users WHERE id=%s", (user_id,))
         conn.commit()
-
-if __name__ == "__main__":
-    create_table()
-    add_user("Alice")
-    print(get_all_users())
