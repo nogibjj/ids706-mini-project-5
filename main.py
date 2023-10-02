@@ -42,3 +42,10 @@ def DELETE(user_id):
         cursor = conn.cursor()
         cursor.execute("DELETE FROM users WHERE id=%s", (user_id,))
         conn.commit()
+
+# DROP (for test purposes)
+def DROP():
+    with get_connection() as conn:
+        cursor = conn.cursor()
+        cursor.execute("DROP TABLE IF EXISTS users")
+        conn.commit()
