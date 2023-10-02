@@ -1,6 +1,6 @@
 # Python Script Interacting with MySQL Database
 
-![CI](https://github.com/aghakishiyeva/ids706-mini-project-5/actions/workflows/CRUD.yml/badge.svg)
+![CI](https://github.com/nogibjj/ids706-mini-project-5/actions/workflows/CRUD.yml/badge.svg)
 
 
 This is a Python project that demonstrates how to create a script that interacts with a MySQL database. The project allows you to connect to a MySQL database, perform CRUD (Create, Read, Update, Delete) operations, and includes tests to verify the functionality.
@@ -19,7 +19,7 @@ Follow these steps to set up and run the project:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/aghakishiyeva/ids706-mini-project-5.git
+   git clone https://github.com/nogibjj/ids706-mini-project-5.git
    ```
 
 2. Navigate to the project directory:
