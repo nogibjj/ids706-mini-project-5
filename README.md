@@ -1,1 +1,1 @@
-# ids706-mini-project-5
+# Python Script Interacting with SQL Database
