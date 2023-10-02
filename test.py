@@ -1,4 +1,4 @@
-from main import CREATE, add_user, READ, UPDATE, DELETE
+from main import CREATE, add_user, READ, UPDATE, DELETE, DROP  # import DROP
 
 def test_CREATE():
     print("Running test_CREATE...")
@@ -42,6 +42,7 @@ def test_DELETE():
 
 if __name__ == "__main__":
     try:
+        DROP()  # Drop the table before running tests
         test_CREATE()
         test_add_user()
         test_READ()
