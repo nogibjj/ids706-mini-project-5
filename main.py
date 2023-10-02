@@ -49,3 +49,6 @@ def DROP():
         cursor = conn.cursor()
         cursor.execute("DROP TABLE IF EXISTS users")
         conn.commit()
+
+if __name__ == "__main__":
+    CREATE()
