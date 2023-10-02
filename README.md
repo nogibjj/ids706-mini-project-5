@@ -1,5 +1,8 @@
 # Python Script Interacting with MySQL Database
 
+![CI](https://github.com/aghakishiyeva/ids706-mini-project-5/actions/workflows/CRUD.yml/badge.svg)
+
+
 This is a Python project that demonstrates how to create a script that interacts with a MySQL database. The project allows you to connect to a MySQL database, perform CRUD (Create, Read, Update, Delete) operations, and includes tests to verify the functionality.
 
 
