@@ -33,21 +33,21 @@ Follow these steps to set up and run the project:
 
 4. Configure environment variables by creating a .env file in the project directory with the following content:
 
-  ```bash
-DB_HOST='your_host'
-DB_NAME='your_db_name'
-DB_USER='your_username'
-DB_PASSWORD='your_password'
-```
+   ```bash
+   DB_HOST='your_host'
+   DB_NAME='your_db_name'
+   DB_USER='your_username'
+   DB_PASSWORD='your_password'
+   ```
 
 5. Create a MySQL database table by running:
 
-  ```bash
-python main.py
-```
+   ```bash
+   python main.py
+   ```
 
 6. Run the tests to ensure everything is working as expected:
 
-  ```bash
-python test.py
-```
+   ```bash
+   python test.py
+   ```
